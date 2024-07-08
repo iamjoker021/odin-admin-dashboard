@@ -1,5 +1,109 @@
+/**** Init CSS reset ****/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/**** Style and Typography ****/
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sidebar {
+    background-color: #8b5cf6;
+}
+
+.main-content {
+    background-color: #cbd5e1;
+}
+
+.sidebar {
+    color: white;
+    padding: 16px;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+div.logo {
+    font-size: 24px;
+}
+
+
+/**** Layout ****/
+
+html, body {
+    height: 100%;
+}
+
+/* Grid Layout */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 5;
+}
+
+/* Sidebar */
+
+.sidebar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr;
+    align-items: start;
+    row-gap: 3%;
+}
+
+.logo li {
+    display: grid;
+    grid-template-columns: max(48px, 10%) 5fr;
+    align-items: center;
+    column-gap: 5%;
+}
+
+.nav-1 li, .nav-2 li {
+    display: grid;
+    grid-template-columns: max(12px, 10%) 5fr;
+    align-items: center;
+    column-gap: 5%;
+}
+
+/* Felx */
+
+/* div.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo svg {
+    flex: 0 1 max(10%, 48px);
+}
+
+.logo span {
+    flex: 3;
+}
+
+.nav-1 li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-1 li svg, .nav-2 li svg {
+    flex: 0 1 max(10%, 28px);
+}
+
+.nav-1 li span, .nav-2 li span {
+    flex: 1;
+} */
