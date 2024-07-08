@@ -64,6 +64,27 @@ div.announcement > p {
     font-size: 10px;
 }
 
+button {
+    color: white;
+    padding: 10px 24px;
+    border-radius: 50px;
+    background-color: #8b5cf6;
+    font-weight: 600;
+    border: 0;
+}
+
+input {
+    border-radius: 50px;
+    background-color: #cbd5e1;
+    width: 70%;
+    height: 100%;
+    border: 0;
+}
+
+header {
+    padding: 10px 24px;
+}
+
 /**** Layout ****/
 
 html, body {
@@ -106,6 +127,8 @@ body {
     column-gap: 5%;
 }
 
+/* Main-Content */
+
 .main-content {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -118,4 +141,45 @@ body {
     gap: 16px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 16px;
+    align-items: center;
+}
+
+header > div {
+    height: 50%;
+}
+
+header div.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+}
+
+header > .search-bar {
+    display: grid;
+    grid-template-columns: minmax(10px, 5%) 1fr;
+    column-gap: 24px;
+}
+
+header > .user-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30px, 5%)) 1fr;
+    column-gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .user-intro {
+    display: grid;
+    grid-template-columns: minmax(50px, 5%) 3fr;
+    column-gap: 24px;
+    align-items: center;
 }
